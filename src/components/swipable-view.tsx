@@ -24,7 +24,7 @@ interface Props extends Pick<PanGestureHandlerProps, 'simultaneousHandlers'> {
 }
 
 const { width: SCREEN_WIDTH } = Dimensions.get('window')
-const SWIPE_THRESHOLD = -SCREEN_WIDTH * 0.2
+const SWIPE_THRESHOLD = -SCREEN_WIDTH * 0.1
 
 const SwipeView = (props: Props) => {
   const { children, backView, onSwipeLeft, simultaneousHandlers } = props
